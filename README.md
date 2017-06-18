@@ -2,7 +2,7 @@
 
 This is a PHP based app which fetches tweets from the Twitter API using *application only authentication*.  
 Tweets which contain a particular hashtag are fetched and then filtered based on the number of retweets.  
-A live version can be viewed here: [tweets.praagya.com](tweets.praagya.com).
+A live version can be viewed here: [tweets.praagya.com](http://tweets.praagya.com).
 
 ## App Structure
 
