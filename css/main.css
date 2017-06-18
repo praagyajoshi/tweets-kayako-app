@@ -1,0 +1,166 @@
+/* ------------------------- */
+/* Navigation bar CSS begins */
+.container.home-nav-container {
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 1px 0 rgba(219, 219, 219, 0.3),
+        0px -4px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+.home-nav .nav-logo {
+    margin-right: 5px;
+}
+
+.home-nav .nav-title {
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1000px) {
+  .home-nav {
+    margin: 0 auto;
+    max-width: 960px;
+    width: 960px;
+  }
+}
+
+@media screen and (min-width: 1192px) {
+  .home-nav {
+    max-width: 1152px;
+    width: 1152px;
+  }
+}
+
+@media screen and (min-width: 1384px) {
+  .home-nav {
+    max-width: 1344px;
+    width: 1344px;
+  }
+}
+/* Navigation bar CSS ends */
+/* ------------------------- */
+
+/* ------------------------- */
+/* Loader CSS begins */
+.loader-container {
+    text-align: center;
+    /*position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 2;*/
+    background-color: white;
+    opacity: 1;
+    filter: opacity(1);
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.loader-container .loader {
+    margin: 0 auto;
+}
+
+.loader-container .loader-text {
+    letter-spacing: 2px;
+    font-size: 14px;
+    padding-top: 10px;
+}
+/* Loader CSS ends */
+/* ------------------------- */
+
+/* ------------------------- */
+/* Tweet Cards CSS begins */
+#tweets-container {
+    opacity: 1;
+    filter: opacity(1);
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.tweet-card {
+    border-radius: 3px;
+}
+
+.tweet-card .user-details .title {
+    font-size: 1rem;
+}
+
+.tweet-card .user-details .subtitle {
+    font-size: 0.9rem;
+}
+
+.tweet-card .user-details .image {
+    overflow: hidden;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.tweet-card .card-content .content {
+    font-size: 0.9rem;
+}
+
+.tweet-card .card-footer .card-footer-item-text {
+    padding-left: 5px;
+}
+
+.new-tweet::after {
+    content: "";
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    box-shadow: 0 2px 3px rgba(52, 152, 219, 0.5),
+        0 0 0 1px rgba(52, 152, 219, 0.5);
+    -webkit-animation: new-tweet-fade 5s ease-in;
+    animation: new-tweet-fade 5s ease-in;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+/* Tweet Cards CSS ends */
+/* ------------------------- */
+
+/* ------------------------- */
+/* Misc. CSS begins */
+.load-more-button-container {
+    text-align: center;
+}
+
+.home-content {
+    padding-top: 52px;
+}
+
+.home-section {
+    padding: 1.5rem;
+}
+
+.hidden {
+    opacity: 0 !important;
+    filter: opacity(0) !important;
+    pointer-events: none !important;
+    height: 0 !important;
+}
+
+@-webkit-keyframes new-tweet-fade {
+    0% {opacity: 1; filter: opacity(1); display: block;}
+    100% {opacity: 0; filter: opacity(0); display: none;}
+}
+
+@keyframes new-tweet-fade {
+    0% {opacity: 1; filter: opacity(1); display: block;}
+    100% {opacity: 0; filter: opacity(0); display: none;}
+}
+/* Misc. CSS ends */
+/* ------------------------- */

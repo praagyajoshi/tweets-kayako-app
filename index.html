@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Tweets for Kayako</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="/css/bulma.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="container home-nav-container">
+        <nav class="nav home-nav">
+            <div class="nav-left">
+                <a class="nav-item">
+                    <img src="/images/kayako-logo.png" class="nav-logo" alt="Kayako">
+                    <span class="nav-title">Tweets for Kayako</span>
+                </a>
+            </div>
+
+            <div class="nav-right">
+                <a class="nav-item">
+                    <span class="icon">
+                        <i class="fa fa-github"></i>
+                    </span>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <!-- ./Navigation Bar -->
+
+    <!-- Content Body -->
+    <div class="home-content">
+        <section class="section home-section">
+            <div class="container">
+
+                <!-- Initial Loader -->
+                <div id="initial-loader" class="loader-container">
+                    <i class="loader"></i>
+                    <div class="loader-text">
+                        Loading tweets...
+                    </div>
+                </div>
+                <!-- ./Initial Loader -->
+
+                <!-- Tweets Container -->
+                <div id="tweets-container" class="hidden">
+                    <div class="columns is-multiline">
+                    </div>
+                    <div class="load-more-button-container">
+                        <a id="load-more-tweets" class="button is-primary">Load more</a>
+                    </div>
+                </div>
+                <!-- ./Tweets Container -->
+
+            </div>
+        </section>
+    </div>
+    <!-- ./Content Body -->
+
+    <!-- Javascripts -->
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="/js/moment.min.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <!-- ./Javascripts -->
+
+</body>
+
+</html>
