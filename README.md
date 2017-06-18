@@ -35,6 +35,6 @@ As it currently stands, the bearer token is obtained before every request. Ideal
 Links in the fetched tweets are parsed, while hashtags and user mentions are not. They should also link to relevant pages on Twitter.
 - **Tweet media**  
 If any media (photo/video) is included in the tweet, it is not displayed on the front end.
-- **Front end framework**
-To make dealing with the front end easier, a simple web framework such as `React` would go a long way, especially if this app is extended.
+- **Front end framework**  
+A templating engine such as [Underscore.js](http://underscorejs.org/) can be used to improve code reusability. Alternatively, a web framework such as `React` would go a long way, especially if this app is extended.
 
